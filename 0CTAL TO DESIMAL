@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+ 
+int main()
+{
+    int octal;
+    int sum=0;
+    int a,c;
+    int n=0;
+ 
+    printf("Enter any octal number: ");
+    scanf("%ld", &octal);
+    clrscr();
+    while (octal != 0)
+    {
+     a=octal%10;
+     c=pow(8,n);
+     sum=sum+(a*c);
+     n=n+1;
+     octal=octal/10;
+    }
+    printf("the answer is %d",sum);
+return 0;
+}
